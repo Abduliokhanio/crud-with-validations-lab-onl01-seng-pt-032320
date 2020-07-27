@@ -20,7 +20,7 @@ before_action :set_song, only: [:show, :edit, :update, :destroy]
   else
     render :new
   end
-end
+  end
 
   private
 
