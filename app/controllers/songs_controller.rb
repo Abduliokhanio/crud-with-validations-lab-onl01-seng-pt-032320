@@ -28,4 +28,8 @@ def set_song
   @song = Song.find(params[:id])
 end
 
+def song_params
+  params.require(:song).permit(:title, :artist_name, :release_year, :released, :genre)
+end
+
 end
